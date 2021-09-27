@@ -1,47 +1,19 @@
-### css面试知识点总结
+## css面试知识点总结
 
 ### 如何居中 div？
 
--水平居中：给 div 设置一个宽度，然后添加 margin:0 auto 属性
+一般常见的几种居中的方法有：
 
-```css
-div {
-  width: 200px;
-  margin: 0 auto;
-}
-```
+对于宽高固定的元素
 
--水平居中，利用 text-align:center 实现
+1. 我们可以利用margin:0 auto来实现元素的水平居中。
 
-```css
-.container {
-  background: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  font-size: 0;
-}
+2. 利用绝对定位，设置四个方向的值都为0，并将margin设置为auto，由于宽高固定，因此对应方向实现平分，可以实现水 平和垂直方向上的居中。
 
-.box {
-  display: inline-block;
-  width: 500px;
-  height: 400px;
-  background-color: pink;
-}
-```
+3. 利用绝对定位，先将元素的左上角通过top:50%和left:50%定位到页面的中心，然后再通过margin负值来调整元素 的中心点到页面的中心。
 
--让绝对定位的 div 居中
+4. 利用绝对定位，先将元素的左上角通过top:50%和left:50%定位到页面的中心，然后再通过translate来调整元素 的中心点到页面的中心。
 
-```css
-div {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: pink; /*方便看效果*/
-}
-```
+5. 使用flex布局，通过align-items:center和justify-content:center设置容器的垂直和水平方向上为居中对 齐，然后它的子元素也可以实现垂直和水平的居中。
 
--水平垂直居中一
+对于宽高不定的元素，上面的后面两种方法，可以实现元素的垂直和水平的居中。
