@@ -19,7 +19,7 @@ module.exports = {
     sidebar: {
       '/base/': [
         { text: 'CSS', link: '/base/css' },
-        { text: 'JavaScript', link: '/base/JavaScript.md' },
+        { text: 'JavaScript', link: '/base/js.md' },
         { text: '计算机网络', link: '/base/计算机网络.md' },
       ],
     },

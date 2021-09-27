@@ -27,3 +27,21 @@ div {
   background-color: pink;
 }
 ```
+
+-让绝对定位的 div 居中
+
+```css
+div {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: pink; /*方便看效果*/
+}
+```
+
+-水平垂直居中一
