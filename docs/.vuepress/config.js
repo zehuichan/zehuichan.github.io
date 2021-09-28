@@ -18,8 +18,8 @@ module.exports = {
     ],
     sidebar: {
       '/base/': [
-        { text: 'CSS', link: '/base/css' },
-        { text: 'JavaScript', link: '/base/js.md' },
+        { text: 'CSS面试知识点总结', link: '/base/css' },
+        { text: 'Html面试知识点总结', link: '/base/html' },
         { text: '计算机网络', link: '/base/计算机网络.md' },
       ],
     },
