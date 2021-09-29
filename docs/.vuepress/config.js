@@ -18,12 +18,12 @@ module.exports = {
     ],
     sidebar: {
       '/base/': [
-        { text: 'CSS面试知识点总结', link: '/base/css' },
-        { text: 'Html面试知识点总结', link: '/base/html' },
+        { text: 'Html + Css', link: '/base/html+css.md' },
+        { text: 'JavaScript', link: '/base/js.md' },
         { text: '计算机网络', link: '/base/计算机网络.md' },
       ],
     },
-    sidebarDepth: 0,
+    sidebarDepth: 2,
     editLink: false,
     lastUpdated: true,
     lastUpdatedText: '上次更新',
