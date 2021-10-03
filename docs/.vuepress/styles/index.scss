@@ -20,7 +20,6 @@
 }
 
 body {
-  font-size: px2rem(16px);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
 }
@@ -31,32 +30,32 @@ h1 {
 }
 
 h2 {
-  font-size: px2rem(25px);
+  font-size: 25px;
   padding-bottom: 0.8rem;
 }
 
 h3 {
   font-weight: 600;
-  font-size: px2rem(18px);
+  font-size: 18px;
 }
 
 h4 {
   font-weight: 600;
-  font-size: px2rem(16px);
+  font-size: 16px;
 }
 
 h5 {
   font-weight: 600;
-  font-size: px2rem(15px);
+  font-size: 15px;
 }
 
 p {
-  font-size: px2rem(15px);
-  line-height: px2rem(26px);
+  font-size: 15px;
+  line-height: 26px;
 }
 
 table {
-  font-size: px2rem(14px);
+  font-size: 14px;
   line-height: 1.5;
   border-collapse: collapse;
 }
@@ -64,20 +63,20 @@ table {
 ul li,
 ol li {
   position: relative;
-  margin: px2rem(5px) 0 px2rem(5px) px2rem(10px);
-  padding-left: px2rem(15px);
-  font-size: px2rem(15px);
-  line-height: px2rem(26px);
+  margin: 14px 0 5px 10px;
+  padding-left: 15px;
+  font-size: 15px;
+  line-height: 26px;
 }
 
 .page-meta {
-  font-size: px2rem(14px);
+  font-size: 14px;
 }
 
 .github-readme {
   img {
     width: auto;
-    height: px2rem(147px);
+    height: 147px;
   }
 }
 

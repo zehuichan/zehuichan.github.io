@@ -1,5 +1,24 @@
 ## Html 面试知识点总结
 
+### 页面导入样式时，使用 link 和 @import 有什么区别？
+
+1. 从属关系区别。 @import 是 CSS 提供的语法规则，只有导入样式表的作用；link 是 HTML 提供的标签，不仅可以加载 CSS 文件，还可以定义 RSS、rel 连接属性、引入网站图标等。
+
+2. 加载顺序区别。加载页面时，link 标签引入的 CSS 被同时加载；@import 引入的 CSS 将在页面加载完毕后被加载。
+
+3. 兼容性区别。@import 是 CSS2.1 才有的语法，故只可在 IE5+ 才能识别；link 标签作为 HTML 元素，不存在兼容性问题。
+
+4. DOM 可控性区别。可以通过 JS 操作 DOM ，插入 link 标签来改变样式；由于 DOM 方法是基于文档的，无法使用 @import 的方式插入样式。
+
+### disabled 和 readonly 的区别？
+
+disabled 指当 input 元素加载时禁用此元素。input 内容不会随着表单提交。
+
+readonly 规定输入字段为只读。input 内容会随着表单提交。
+
+无论设置 readonly 还是 disabled，通过 js 脚本都能更改 input 的 value
+
+
 ## CSS 面试知识点总结
 
 ### 介绍一下标准的 CSS 的盒子模型？低版本 IE 的盒子模型有什么不同的？
