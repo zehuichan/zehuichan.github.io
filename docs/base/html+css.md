@@ -1,6 +1,6 @@
 ## Html 面试知识点总结
 
-### 页面导入样式时，使用 link 和 @import 有什么区别？
+### 页面导入样式时，使用 `link` 和 `@import` 有什么区别？
 
 1. 从属关系区别。 @import 是 CSS 提供的语法规则，只有导入样式表的作用；link 是 HTML 提供的标签，不仅可以加载 CSS 文件，还可以定义 RSS、rel 连接属性、引入网站图标等。
 
@@ -10,7 +10,7 @@
 
 4. DOM 可控性区别。可以通过 JS 操作 DOM ，插入 link 标签来改变样式；由于 DOM 方法是基于文档的，无法使用 @import 的方式插入样式。
 
-### disabled 和 readonly 的区别？
+### `disabled` 和 `readonly` 的区别？
 
 disabled 指当 input 元素加载时禁用此元素。input 内容不会随着表单提交。
 
@@ -18,6 +18,16 @@ readonly 规定输入字段为只读。input 内容会随着表单提交。
 
 无论设置 readonly 还是 disabled，通过 js 脚本都能更改 input 的 value
 
+### `Html` 规范中为什么要求引用资源不加协议头 `http` 或者 `https`？
+
+如果用户当前访问的页面是通过 `HTTPS` 协议来浏览的，那么网页中的资源也只能通过 `HTTPS` 协议来引用，否则浏览器会出现
+警告信息，不同浏览器警告信息展现形式不同。
+
+为了解决这个问题，我们可以省略 `URL` 的协议声明，省略后浏览器照样可以正常引用相应的资源，这项解决方案称为
+protocol-relative URL，暂且可译作协议相对 URL。
+
+如果使用协议相对 `URL`，无论是使用 `HTTPS`，还是 `HTTP` 访问页面，浏览器都会以相同的协议请求页面中的资源，避免弹出类似
+的警告信息，同时还可以节省5字节的数据量。
 
 ## CSS 面试知识点总结
 
@@ -32,7 +42,8 @@ IE盒模型和W3C标准盒模型的区别：
 2. IE盒模型：属性width，height包含content、border和padding，指的是content+padding+border。
 
 在ie8+浏览器中使用哪个盒模型可以由box-sizing（CSS新增的属性）控制，默认值为content-box，即标准盒模型；
-如果将box-sizing设为border-box则用的是IE盒模型。如果在ie6，7，8中DOCTYPE缺失会将盒子模型解释为IE 盒子模型。若在页面中声明了DOCTYPE类型，所有的浏览器都会把盒模型解释为W3C盒模型。
+如果将box-sizing设为border-box则用的是IE盒模型。如果在ie6，7，8中DOCTYPE缺失会将盒子模型解释为IE 盒子模型。
+若在页面中声明了DOCTYPE类型，所有的浏览器都会把盒模型解释为W3C盒模型。
 
 ### 如何居中 div？
 
