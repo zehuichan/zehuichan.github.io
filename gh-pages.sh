@@ -1,13 +1,13 @@
-#!/usr/bin/env sh
+#! /bin/sh
 
 # 终止一个错误
 set -e
 
 # 构建
-npm run docs:github
+npm run docs:build
 
 # 进入生成的构建文件夹
-cd docs/.vuepress/dist
+cd ./docs/.vuepress/dist
 
 git init
 git add -A
@@ -16,4 +16,6 @@ git commit -m 'deploy'
 # 如果你想要部署到 https://<USERNAME>.github.io
 git push -f https://github.com/zehuichan/zehuichan.github.io.git master:gh-pages
 
-cd -
+echo "✅ Publish completed"
+
+exit 0

@@ -13,8 +13,7 @@ module.exports = {
     repoLabel: 'github',
     navbar: [
       { text: '首页', link: '/' },
-      { text: '基础', link: '/base/' },
-      { text: '关于我', link: '/resume/' },
+      { text: '基础', link: '/base/' }
     ],
     sidebar: {
       '/base/': [
@@ -30,11 +29,6 @@ module.exports = {
     lastUpdatedText: '上次更新',
     contributors: true,
     contributorsText: '贡献者'
-  },
-  markdown: {
-    code: {
-      lineNumbers: false // 代码块显示行号
-    }
   },
   plugins: [
     ['@vuepress/plugin-search'],
