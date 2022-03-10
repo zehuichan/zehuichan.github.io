@@ -5,32 +5,31 @@
 </template>
 
 <script>
-  export default {
-    name: 'DocSimulator',
-    props: {
-      src: String,
-      bodyStyle: {
-        type: Object,
-        default: () => ({})
-      }
+export default {
+  name: 'DocSimulator',
+  props: {
+    src: String,
+    bodyStyle: {
+      type: Object,
+      default: () => ({})
     }
   }
+}
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-  .doc-simulator {
-    box-sizing: border-box;
-    width: 360px;
-    min-width: 360px;
-    overflow: hidden;
-    background: #fafafa;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, .19);
-  }
+.doc-simulator {
+  box-sizing: border-box;
+  width: 360px;
+  min-width: 360px;
+  overflow: hidden;
+  background: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .19);
+}
 
-  .doc-simulator iframe {
-    display: block;
-    width: 100%;
-  }
+.doc-simulator iframe {
+  display: block;
+  width: 100%;
+}
 </style>
