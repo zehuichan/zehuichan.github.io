@@ -1,3 +1,5 @@
+const { path } = require('@vuepress/utils')
+
 module.exports = {
   base: '/',
   lang: 'zh-CN',
@@ -13,7 +15,8 @@ module.exports = {
     repoLabel: 'github',
     navbar: [
       { text: '首页', link: '/' },
-      { text: '基础', link: '/base/' }
+      { text: '基础', link: '/base/' },
+      { text: '关于我', link: '/about/' },
     ],
     sidebar: {
       '/base/': [
@@ -34,5 +37,11 @@ module.exports = {
     ['@vuepress/plugin-search'],
     ['@vuepress/plugin-pwa'],
     ['@vuepress/plugin-pwa-popup'],
+    [
+      '@vuepress/register-components',
+      {
+        componentsDir: path.resolve(__dirname, './components')
+      }
+    ]
   ]
 }
